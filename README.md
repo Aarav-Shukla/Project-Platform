@@ -1,4 +1,4 @@
-![sitelogo]([https://github.com/Aarav-Shukla/Freelance-Work/assets/153660332/d7398c39-8c89-467c-95fc-d7c94180e19b](https://github.com/Aarav-Shukla/Project-Platform/blob/main/ProjectPlatform/projectplatform.jpeg?raw=true)) 
+
 
 These websites were created by Aarav Shukla. 
 
