@@ -1,0 +1,408 @@
+/* Universal box-sizing reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Font families */
+.lexend {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noto-sans-mono {
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* GRID & BACKGROUND */
+body {
+    background-image: url(bgimage.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend", sans-serif;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.grid-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    width: 100%;
+    align-items: start;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    max-width: 1300px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 7.5px;
+    margin-top: 20px;
+}
+
+.abtbox {
+    background-image: url(aboutme.jpg);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.abtbox a,
+.abtbox h1 {
+    color: BLACK;
+    justify-content: center;
+}
+
+.skibox,
+.expbox,
+.edubox,
+.prjbox {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    height: 500px;
+    width: 300px; /* Default width */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1262px) {
+    .boxes {
+        justify-content: center;
+    }
+
+    .skibox,
+    .expbox,
+    .edubox,
+    .prjbox {
+        width: calc(50% - 3.75px); /* Adjust width for two columns */
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skibox,
+    .expbox,
+    .edubox,
+    .prjbox {
+        width: 100%;
+        max-width: 1300px; /* Width as wide as abtbox */
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skibox,
+    .expbox,
+    .edubox,
+    .prjbox {
+        width: 100%;
+        max-width: 400px; /* Width for smaller screens */
+        height: 500px;
+    }
+}
+
+.skibox {
+    background-image: url(skills.jpg);
+}
+
+.expbox {
+    background-image: url(experience.jpg);
+}
+
+.edubox {
+    background-image: url(education.jpg);
+}
+
+.prjbox {
+    background-image: url(projects.jpg);
+}
+
+.skibox a,
+.expbox a,
+.edubox a,
+.prjbox a {
+    font-weight: bold;
+    font-size: 20pt;
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prjbox a {
+    color: black;
+}
+
+.y {
+    margin-top: auto;
+}
+
+/*HEADER*/
+.header {
+    border-radius: 5px;
+    top: 0;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
+    text-align: right;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header h1,
+.header h2,
+.header p,
+.header a {
+    color: whitesmoke;
+    text-align: left;
+    cursor: default;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*ABOUT*/
+.about h1 {
+    font-size: 25pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.about p {
+    font-size: 20pt;
+    color: rgb(130, 130, 130);
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: default;
+}
+
+/*SKILLS*/
+.skills h1 {
+    font-size: 20pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.skills p,
+.skills a {
+    font-size: 18pt;
+    cursor: default;
+    padding-left: 10px;
+    color: rgb(130, 130, 130);
+}
+
+/*EXPERIENCE*/
+.experience h1 {
+    font-size: 17pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.experience h3 {
+    color: rgb(130, 130, 130);
+    font-size: 12pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.experience h4 {
+    color: rgb(130, 130, 130);
+    font-size: 10pt;
+    padding-left: 30px;
+    cursor: default;
+}
+
+.experience p {
+    color: rgb(130, 130, 130);
+    font-size: 9pt;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    cursor: default;
+}
+
+/*EDUCATION*/
+.education h1 {
+    font-size: 20pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.education h3 {
+    color: rgb(130, 130, 130);
+    font-size: 17pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.education h4 {
+    color: rgb(130, 130, 130);
+    font-size: 15pt;
+    padding-left: 30px;
+    cursor: default;
+}
+
+.education p {
+    color: rgb(130, 130, 130);
+    font-size: 12pt;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    cursor: default;
+}
+
+/*PROJECTS*/
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.projects h1 {
+    font-size: 17pt;
+    padding-left: 10px;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.temp {
+    margin: 0 auto;
+    border: 2px solid rgb(130, 130, 130);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.temp::-webkit-scrollbar {
+    width: 0px;
+}
+
+.temp a {
+    font-weight: bold;
+    font-size: 15pt;
+    color: black;
+    padding-left: 5px;
+}
+
+.txt {
+    color: rgb(130, 130, 130);
+    font-size: 13pt;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: default;
+}
+
+.x {
+    font-size: 13pt;
+    text-align: center;
+}
+
+.x a {
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+}
+
+.x p {
+    cursor: default;
+    color: rgb(130, 130, 130);
+}
+
+/*FOOTER*/
+.footer {
+    font-family: "Noto Sans Mono", monospace;
+    width: 100%;
+    align-items: end;
+}
+
+.footer p {
+    font-size: 10pt;
+    text-align: center;
+    color: rgb(130, 130, 130);
+}
+
+.footer a {
+    color: rgb(130, 130, 130);
+}
+
+/*EXT FOOTER*/
+.extfooter {
+    font-family: "Noto Sans Mono", monospace;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.extfooter p {
+    font-size: 10pt;
+    text-align: center;
+    color: rgb(130, 130, 130);
+}
+
+.extfooter a {
+    color: rgb(130, 130, 130);
+}
