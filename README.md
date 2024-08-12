@@ -3,6 +3,9 @@
 
 These websites were created by Aarav Shukla. 
 
+https://goprojectplatform.github.io/
+
 Links:
 * Aarav Shukla: https://aarav-shukla.github.io
 * Armaan Ali: https://armaanalit.github.io
+  
